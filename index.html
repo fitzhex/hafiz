@@ -1,15 +1,18 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Cordova</title>
-<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
-<script>
-  alert("test");
-  
-</script>
-</head>
 <body>
-<h1>Hello World</h1>
-<input type="button" onclick="test()" value="click me">
+
+<p>Click the button to trigger a function.</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
 </body>
 </html>
